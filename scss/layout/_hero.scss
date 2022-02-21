@@ -17,11 +17,6 @@
   margin: 0 auto;
 }
 
-.hero-title-container {
-  max-width: 696px;
-  margin: 0 auto;
-}
-
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -30,6 +25,10 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 30px;
+  &-container {
+    max-width: 696px;
+    margin: 0 auto;
+  }
 }
 
 .hero-button {
@@ -39,7 +38,6 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  cursor: pointer;
   color: #ffffff;
   border-color: transparent;
   border-radius: 4px;

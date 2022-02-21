@@ -289,8 +289,7 @@ header {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link:hover,
-.header-link:focus {
+.header-link:hover, .header-link:focus {
   color: var(--accent-color);
 }
 
@@ -308,13 +307,13 @@ header {
   fill: var(--accent-color);
 }
 
+.header-link-icon {
+  margin-right: 10px;
+}
+
 .header-link-mail:hover .header-link-icon,
 .header-link-mail:focus .header-link-icon {
   fill: var(--accent-color);
-}
-
-.header-link-icon {
-  margin-right: 10px;
 }
 
 .header-link-tel,
@@ -330,11 +329,6 @@ header {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link-tel:hover,
-.header-link-tel:focus {
-  color: var(--accent-color);
-}
-
 .header-link-mail:hover,
 .header-link-mail:focus {
   color: var(--accent-color);
@@ -342,6 +336,10 @@ header {
 
 .header-link-tel {
   margin-left: 50px;
+}
+
+.header-link-tel:hover, .header-link-tel:focus {
+  color: var(--accent-color);
 }
 
 .logo {
@@ -376,11 +374,6 @@ header {
   margin: 0 auto;
 }
 
-.hero-title-container {
-  max-width: 696px;
-  margin: 0 auto;
-}
-
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -391,6 +384,11 @@ header {
   margin-bottom: 30px;
 }
 
+.hero-title-container {
+  max-width: 696px;
+  margin: 0 auto;
+}
+
 .hero-button {
   font-family: inherit;
   background: var(--accent-color);
@@ -398,7 +396,6 @@ header {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  cursor: pointer;
   color: #ffffff;
   border-color: transparent;
   border-radius: 4px;

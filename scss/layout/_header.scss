@@ -19,8 +19,10 @@ header {
   margin-left: auto;
 }
 
-.header-item + .header-item {
-  margin-left: 50px;
+.header-item {
+  & + & {
+    margin-left: 50px;
+  }
 }
 
 .header-connect {
@@ -33,13 +35,12 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
 }
 
 .header-link-active {
@@ -48,22 +49,20 @@ header {
 
 .header-link-icon {
   fill: var(--text-color);
+  .header-link-tel:hover &,
+  .header-link-tel:focus & {
+    fill: var(--accent-color);
+  }
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link-tel:hover .header-link-icon,
-.header-link-tel:focus .header-link-icon {
-  fill: var(--accent-color);
-}
-
-.header-link-mail:hover .header-link-icon,
-.header-link-mail:focus .header-link-icon {
-  fill: var(--accent-color);
-}
-
 .header-link-icon {
   margin-right: 10px;
+  .header-link-mail:hover &,
+  .header-link-mail:focus & {
+    fill: var(--accent-color);
+  }
 }
 
 .header-link-tel,
@@ -80,11 +79,6 @@ header {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link-tel:hover,
-.header-link-tel:focus {
-  color: var(--accent-color);
-}
-
 .header-link-mail:hover,
 .header-link-mail:focus {
   color: var(--accent-color);
@@ -92,4 +86,8 @@ header {
 
 .header-link-tel {
   margin-left: 50px;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
