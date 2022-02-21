@@ -15,13 +15,12 @@
   margin-bottom: 50px;
 }
 
-.line-item + .line-item {
-  margin-left: 30px;
-}
-
 .line-item {
   width: 370px;
   position: relative;
+  & + & {
+    margin-left: 30px;
+  }
 }
 
 .line-top-text {
