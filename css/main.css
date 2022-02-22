@@ -645,7 +645,7 @@ footer {
   align-items: baseline;
 }
 
-.footer-logo {
+.container-logo__footer-logo {
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
@@ -657,7 +657,7 @@ footer {
   margin-bottom: 20px;
 }
 
-.address {
+.address-list__adr {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -667,12 +667,12 @@ footer {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address:hover, .address:focus {
+.address-list__adr:hover, .address-list__adr:focus {
   color: var(--accent-color);
 }
 
-.footer-link-tel,
-.footer-link-mail {
+.address-list__tel,
+.address-list__mail {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -682,23 +682,23 @@ footer {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link-tel:hover, .footer-link-tel:focus,
-.footer-link-mail:hover,
-.footer-link-mail:focus {
+.address-list__tel:hover, .address-list__tel:focus,
+.address-list__mail:hover,
+.address-list__mail:focus {
   color: var(--accent-color);
 }
 
-.footer-item {
+.address-list__item {
   margin-bottom: 9px;
 }
 
-.footer-central-part {
+.footer-networks {
   width: 206px;
   margin-left: 70px;
 }
 
-.footer-right-text,
-.footer-right-side-text {
+.footer-networks__text,
+.footer-subscribe__text {
   font-weight: bold;
   font-style: normal;
   font-size: 14px;
@@ -710,12 +710,12 @@ footer {
   margin-bottom: 20px;
 }
 
-.footer-right-list {
+.networks-list {
   display: flex;
   justify-content: left;
 }
 
-.footer-socials-link {
+.networks-list__link {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -728,34 +728,34 @@ footer {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-socials-link:hover, .footer-socials-link:focus {
+.networks-list__link:hover, .networks-list__link:focus {
   background-color: var(--accent-color);
 }
 
-.footer-right-item {
+.networks-list__item {
   margin-right: 10px;
 }
 
-.footer-socials-icon {
+.networks-list__icon {
   fill: #ffffff;
 }
 
-.footer-socials-link:hover .footer-socials-icon {
+.networks-list__link:hover .networks-list__icon {
   fill: #ffffff;
 }
 
-.right-side-wrap {
+.footer-form__wrp {
   display: flex;
   justify-content: center;
 }
 
-.footer-right-side {
+.footer-subscribe {
   margin-left: auto;
   width: calc(100% / 2);
   padding-left: 15px;
 }
 
-.right-side-email {
+.footer-form__email {
   width: 358px;
   height: 50px;
   font-weight: 400;
@@ -791,7 +791,7 @@ footer {
   margin: 0 auto;
 }
 
-.footer-btn-icon {
+.footer-btn__icon {
   margin-left: 10px;
 }
 
