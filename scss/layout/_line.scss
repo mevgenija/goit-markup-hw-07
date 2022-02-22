@@ -15,15 +15,16 @@
   margin-bottom: 50px;
 }
 
-.line-item {
-  width: 370px;
-  position: relative;
-  & + & {
-    margin-left: 30px;
-  }
+.line-list__item + .line-list__item {
+  margin-left: 30px;
 }
 
-.line-top-text {
+.line-list__item {
+  width: 370px;
+  position: relative;
+}
+
+.line-list__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
