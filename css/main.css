@@ -429,11 +429,7 @@ header {
   display: flex;
 }
 
-.features-item {
-  width: 270px;
-}
-
-.features-item-box {
+.features-wrp {
   background-color: #f5f4fa;
   border-radius: 4px;
   display: flex;
@@ -444,22 +440,23 @@ header {
   margin-bottom: 30px;
 }
 
-.features-item + .features-item {
+.features-list__item {
+  width: 270px;
+}
+
+.features-list__item + .features-list__item {
   margin-left: 30px;
 }
 
-.features-subtitle {
+.features-list__subtitle {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-.features-subtitle {
   margin-bottom: 10px;
 }
 
-.features-text {
+.features-list__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -525,18 +522,18 @@ header {
   border-radius: 0px 0px 4px 4px;
 }
 
-.about-item {
+.about-list__item {
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
 }
 
-.about-item-content {
+.about-list__content {
   background-color: #ffffff;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.about-subtitle {
+.about-list__subtitle {
   font-style: normal;
   font-size: 16px;
   line-height: 1.18;
@@ -545,7 +542,7 @@ header {
   margin-bottom: 10px;
 }
 
-.about-text,
+.about-list__text,
 .portfolio-text {
   font-size: 16px;
   line-height: 1.18;
@@ -554,17 +551,17 @@ header {
   color: var(--text-color);
 }
 
-.about-text {
+.about-list__text {
   display: block;
   margin-bottom: 15px;
 }
 
-.about-socials-list {
+.socials {
   display: flex;
   justify-content: center;
 }
 
-.about-socials-link {
+.socials__link {
   width: 44px;
   height: 44px;
   background-color: #ffffff;
@@ -577,20 +574,20 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.about-socials-link:hover, .about-socials-link:focus {
+.socials__link:hover, .socials__link:focus {
   background-color: var(--accent-color);
 }
 
-.about-socials-item + .about-socials-item {
+.socials__item + .socials__item {
   margin-left: 10px;
 }
 
-.about-socials-icon {
+.socials__icon {
   fill: #afb1b8;
 }
 
-.about-socials-link:hover .about-socials-icon,
-.about-socials-link:focus .about-socials-icon {
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon {
   fill: #ffffff;
 }
 
