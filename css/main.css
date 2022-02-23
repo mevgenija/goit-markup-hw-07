@@ -79,7 +79,7 @@ img {
   padding: 40px;
 }
 
-.modal-close-btn {
+.modal__close-btn {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -94,7 +94,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover {
+.modal__close-btn:hover {
   fill: var(--accent-color);
 }
 
@@ -104,7 +104,7 @@ img {
   visibility: hidden;
 }
 
-.modal-title {
+.modal__title {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -115,7 +115,8 @@ img {
   margin-bottom: 12px;
 }
 
-.modal-label {
+.form-field__label,
+.form-textarea__label {
   font-weight: normal;
   font-size: 12px;
   line-height: 1.16;
@@ -123,7 +124,7 @@ img {
   color: #757575;
 }
 
-.modal-inpup-wrap {
+.form-field__inpup-wrp {
   margin-top: 4px;
   position: relative;
 }
@@ -132,7 +133,7 @@ img {
   margin-bottom: 10px;
 }
 
-.modal-input {
+.form-field__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -143,11 +144,11 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:hover, .modal-input:focus {
+.form-field__input:hover, .form-field__input:focus {
   border-color: var(--accent-color);
 }
 
-.modal-icon {
+.form-field__icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -155,15 +156,15 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:hover + .modal-icon {
+.form-field__input:hover + .form-field__icon {
   fill: var(--accent-color);
 }
 
-.modal-input:focus + .modal-icon {
+.form-field__input:focus + .form-field__icon {
   fill: var(--accent-color);
 }
 
-.modal-text {
+.form-textarea__text {
   width: 100%;
   height: 120px;
   padding: 12px;
@@ -174,7 +175,7 @@ img {
   margin-top: 4px;
 }
 
-.modal-text::placeholder {
+.form-textarea__text::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16s;
@@ -182,8 +183,8 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-check-text,
-.modal-check-contract {
+.form-checkbox__text,
+.form-checkbox__contract {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -193,7 +194,7 @@ img {
   align-items: center;
 }
 
-.modal-check-text::before {
+.form-checkbox__text::before {
   content: '';
   width: 16px;
   height: 15px;
@@ -203,7 +204,7 @@ img {
   margin-right: 7px;
 }
 
-.modal-check:checked + .modal-check-text::before {
+.form-checkbox__check:checked + .form-checkbox__text::before {
   background-color: var(--accent-color);
   background-image: url(../image/icons/modal-icon.svg);
   background-repeat: no-repeat;
@@ -211,13 +212,13 @@ img {
   border: none;
 }
 
-.modal-check-contract {
+.form-checkbox__contract {
   color: var(--accent-color);
   text-decoration-line: underline;
   margin-left: 3px;
 }
 
-.form-field-checkbox {
+.form-checkbox {
   margin-top: 15px;
   margin-bottom: 25px;
 }
