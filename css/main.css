@@ -544,7 +544,7 @@ header {
 }
 
 .about-list__text,
-.portfolio-text {
+.product-content__text {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -796,7 +796,7 @@ footer {
   margin-left: 10px;
 }
 
-.portfolio-button {
+.buttons-list__btn {
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
@@ -813,7 +813,7 @@ footer {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-button:hover, .portfolio-button:focus {
+.buttons-list__btn:hover, .buttons-list__btn:focus {
   background-color: var(--accent-color);
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -828,15 +828,8 @@ footer {
   justify-content: center;
 }
 
-.buttons-item + .buttons-item {
+.buttons-list__item + .buttons-list__item {
   margin-left: 8px;
-}
-
-.portfolio-button:hover,
-.portfolio-button:focus {
-  background-color: var(--accent-color);
-  color: #ffffff;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .box {
